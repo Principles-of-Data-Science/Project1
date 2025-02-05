@@ -20,7 +20,6 @@ library(tidyverse)
 
 ```{r}
 #| message: false
-#| cache: true
 
 ## Loading all the data files
 ## DO NOT CHANGE THIS CODE
@@ -62,7 +61,7 @@ For this question an *active speeedcuber* is defined as any person registered in
 
 This question has two parts:
 
-1. According to this version of the dataset, who holds the world record single best solve? 
+1. According to the data, who holds the world record single best solve? On what date was this record set? 
 
 
 ```{r}
@@ -83,7 +82,7 @@ On what date was this record set?
 
 
 
-2. According to this version of the dataset, who *previously* held the world record single best solve? 
+2. According to the data, who previously held the world record best single solve? 
 
 ```{r}
 ## Add your code here
@@ -103,11 +102,15 @@ On what date was this previous record set?
 **Write your answer here.**
 
 
+NOTE: For these questions, consider all speedcubers (not just active ones) and define "best" as the fastest time for a single solve (not for an average).
+
+
+
 ### Regional Rankings
 
 This question has two parts:
 
-1. According to this version of the dataset, who is the top ranked male speedcuber (for single best solve) in Australia? 
+1. Amongst all speedcubers, who is the top ranked male speedcuber (for best single solve) in Australia?
 
 ```{r}
 ## Add your code here
@@ -119,14 +122,21 @@ This question has two parts:
 
 
 
-2. Who is the top ranked female speedcuber (for single best solve) in Europe?
+2. Amongst all speedcubers, who is the top ranked female speedcuber (for best single solve time) in Europe?
+
+NOTE: Europe is identified under the `continentId` column of the `countries` table.
+
 
 ```{r}
 ## Add your code here
 
 ```
 
+
+
 **Write your answer here.**
+
+
 
 
 ### Time Until Sub-5
@@ -148,7 +158,8 @@ Having a time below 5 seconds is considered an elite achievement and most speedc
 
 
 
-2. For **one** of the top 10 speedcubers make a plot of their solve times vs. the date of the solve, with date on the x-axis and solve time on the y-axis. 
+2. For **one** of the top 10 speedcubers make a scatterplot of their individual single solve times vs. the date of the solve, with date on the x-axis and solve time on the y-axis. 
+
 
 ```{r}
 ## Add your code here
@@ -170,42 +181,6 @@ The idea here is to identify "up-and-coming" speedcubers who are not yet achievi
 **Write your result here.**
 
 
-## Additional Questions
-
-
-### Question 1
-
-State the question here:
-
-
-State your expectation here:
-
-
-
-```{r}
-## Add your code here
-
-```
-
-
-**Write a summary of your result here.**
-
-
-### Question 2
-
-State the question here:
-
-
-State your expectation here:
-
-
-
-```{r}
-## Add your code here
-
-```
-
-**Write a summary of your result here.**
 
 
 ## Discussion
