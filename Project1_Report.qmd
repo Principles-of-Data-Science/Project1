@@ -73,6 +73,8 @@ This question has two parts:
 
 On what date was this record set?
 
+NOTE: Use the start date of the competition in which the record was set.
+
 ```{r}
 ## Add your code here
 
